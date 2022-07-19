@@ -1,1 +1,9 @@
+#criação de gráfico de dispersão
 
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.arange(-2,3,1) #gera uma sequencia de numeros inteiros
+def f(x):
+  return x**2 + 1
+y = f(x)
+plt.plot(x, y, 'go', color='green', linewidth=3)
